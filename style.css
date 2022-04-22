@@ -1,0 +1,62 @@
+body{
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main img{
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+}
+.controls{
+  margin: 10px 20px;
+  padding: 20px;
+}
+.icon{
+  width: 25px;
+  height: 25px;
+}
+.all-icon{
+  margin-left: 300px;
+}
+.icon-image{
+  float: left;
+  padding: 20px;
+}
+
+.icon-image:hover{
+    text-decoration: underline;
+}
+
+#grayscale-section, #blur-section, #opacity-section, #brightness-section,
+#contrast-section, #invert-section, #saturate-section, #resize-section{
+   display: none;
+}
+@media (max-width : 1200px){
+  .all-icon{
+    margin-left: 150px;
+    overflow-x: scroll;
+  }
+}
+@media (max-width : 700px) {
+  .all-icon{
+    margin-left: 75px;
+  }
+}
+@media (max-width : 500px) {
+
+  .all-icon{
+    width: 100%;
+    margin-left: 0;
+    display: flex;
+    overflow: scroll;
+  }
+
+  .all-icon .icon-image{
+    float: none;
+    padding: 10px;
+  }
+  .all-icon::-webkit-scrollbar {
+    width: 0;
+  }
+}
